@@ -33,9 +33,42 @@
     </div>
     <div class="content-b cb-1">
         <div class="cb-header">
-            <div><h2>Star Wars</h2></div>
-            <div><p>info</p></div>
+            <h1>Star Wars</h1>
+            <p>info</p>
+        </div>
+        <div class="jedi-archives">
+        <div class="ja-content">
+            <h2>Compile Search</h2>
+            <div class="dropdown">
+                <button onclick="myFunction(1)" class="dropbtn">Filter</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">People</a>
+                    <a href="#about">Planets</a>
+                    <a href="#contact">Species</a>
+                    <a href="#contact">Starships</a>
+                    <a href="#contact">Vehicles</a>
+                  </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction(2)" class="dropbtn">Filter Movie</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">1</a>
+                    <a href="#about">2</a>
+                    <a href="#contact">3</a>
+                    <a href="#contact">4</a>
+                    <a href="#contact">5</a>
+                    <a href="#contact">6</a>
+                    <a href="#contact">7</a>
+                  </div>
+            </div>
+        </div>
+        <div class="ja-content">
+            <h2>Results:</h2>
+            <div class="searchResults"></div>
+        </div>
         </div>
     </div>
+    <script src="main.js"></script>
+    <script src="starships.js"></script>
 </body>
 </html>
