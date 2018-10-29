@@ -1,6 +1,6 @@
 let search1 = null;
 let search2 = null;
-let results = null;
+let results = document.querySelector("#openingCrawl");
 
 myFunction1 = () => 
 {
@@ -55,7 +55,8 @@ returnResults = () =>
       })
       .then(function(myJson)
       {
-        search1 = myJson;
+        results.textContent = myJson;
+
         console.log(JSON.stringify(myJson)); //verify the correct object is being passing via console. 
       });
 }
