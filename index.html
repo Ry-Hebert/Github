@@ -40,26 +40,29 @@
         <div class="ja-content">
             <h2>Compile Search</h2>
             <div class="dropdown">
-                <button onclick="myFunction(1)" class="dropbtn">Filter</button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">People</a>
-                    <a href="#about">Planets</a>
-                    <a href="#contact">Species</a>
-                    <a href="#contact">Starships</a>
-                    <a href="#contact">Vehicles</a>
+                <button onclick="myFunction1()" class="dropbtn">Filter</button>
+                  <div id="myDropdown1" class="dropdown-content">
+                    <a href="#home" onclick="filterFunc(1, 'people')">People</a>
+                    <a href="#about" onclick="filterFunc(1, 'planets')">Planets</a>
+                    <a href="#contact" onclick="filterFunc(1, 'species')">Species</a>
+                    <a href="#contact" onclick="filterFunc(1, 'starships')">Starships</a>
+                    <a href="#contact" onclick="filterFunc(1, 'vehicles')">Vehicles</a>
                   </div>
             </div>
             <div class="dropdown">
-                <button onclick="myFunction(2)" class="dropbtn">Filter Movie</button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">1</a>
-                    <a href="#about">2</a>
-                    <a href="#contact">3</a>
-                    <a href="#contact">4</a>
-                    <a href="#contact">5</a>
-                    <a href="#contact">6</a>
-                    <a href="#contact">7</a>
+                <button onclick="myFunction2()" class="dropbtn">Filter Movie</button>
+                  <div id="myDropdown2" class="dropdown-content">
+                      <a href="#home" onclick="filterFunc(2, 1)">1</a>
+                      <a href="#about" onclick="filterFunc(2, 2)">2</a>
+                    <a href="#contact" onclick="filterFunc(2, 3)">3</a>
+                    <a href="#contact" onclick="filterFunc(2, 4)">4</a>
+                    <a href="#contact" onclick="filterFunc(2, 5)">5</a>
+                    <a href="#contact" onclick="filterFunc(2, 6)">6</a>
+                    <a href="#contact" onclick="filterFunc(2, 7)">7</a>
                   </div>
+            </div>
+            <div>
+                <button onclick="returnResults()">Search</button>
             </div>
         </div>
         <div class="ja-content">
