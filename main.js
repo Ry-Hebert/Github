@@ -1,6 +1,6 @@
 let search1 = null;
 let search2 = null;
-let results = document.querySelector("#openingCrawl");
+let results = document.querySelector("#searchResults");
 
 myFunction1 = () => 
 {
@@ -48,18 +48,19 @@ else{console.error('Error: Your search turned up no results.');}
 
 returnResults = () =>
 {
-  fetch('https://swapi.co/api/'+search1+'/'+search2+'/')
+  fetch(`https://swapi.co/api/${search1}/${search2}/`)
       .then(function(response)
       {
         return response.json();
       })
       .then(function(myJson)
       {
-        results.textContent = myJson;
+        let tryThis = JSON.stringify(myJson);
+        results.appendChild(document.createElement('li')).textContent=tryThis;
 
-        console.log(JSON.stringify(myJson)); //verify the correct object is being passing via console. 
+        console.log(tryThis); //verify the correct object is being passing via console. 
       });
-}
+};
 
 //fetch('https://swapi.co/api/'+pram2+'/')
 //    .then(function(response)
