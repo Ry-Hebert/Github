@@ -1,0 +1,41 @@
+body
+{
+    margin: 0em;
+    padding: 0em;
+    display: inline;
+}
+
+#navbar
+{
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#landing-page
+{
+    height: calc(100vh);
+    width: 100%;
+}
+
+.nav-items
+{
+    margin: 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+.nav-item
+{
+    margin: 10px;
+}
+
+.nav-item-logo
+{
+    margin: 10px;
+}
