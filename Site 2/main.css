@@ -11,16 +11,22 @@ body
     width: 100%;
     padding: 0px;
     margin: 0px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-content: center;
 }
 
 #landing-page
 {
-    height: calc(100vh);
+    height: calc(100vh - 60px);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-items
@@ -32,10 +38,78 @@ body
 
 .nav-item
 {
-    margin: 10px;
+    margin: 20px;
 }
 
 .nav-item-logo
 {
-    margin: 10px;
+    margin: 20px;
+}
+
+#navbar
+{
+    background-color: black;
+    color: white;
+}
+
+.nav-i
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-i:hover
+{
+    color: blanchedalmond;
+}
+
+#nav-spacing
+{
+    height: 60px;
+}
+
+#landing-page h1
+{
+display: flex;
+}
+
+.content-section
+{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fort-search
+{
+    background-color: #1ac2fe;
+    color: white;
+}
+
+.flex-row-obj
+{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#api-search-results
+{
+    width: 75%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card
+{
+    height: 20vh;
+    width: 20vh;
+    background-image: url('https://fortnite-public-files.theapinetwork.com/image/d17ae35-1b64bca-f0cebef-e097b12.png');
+    background-size: cover;
 }
