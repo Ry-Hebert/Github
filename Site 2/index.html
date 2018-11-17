@@ -6,28 +6,74 @@
 <body>
     <div id="navbar">
         <div class="nav-item-logo">
-            <span class="logo"><a class="nav-i" href="index.html">RH Designs</a></span>
+        <span class="logo">RH Designs</span>
         </div>
         <div class="nav-items">
             <div class="nav-item">
-                <span><a class="nav-i" href="index.html" target="_blank">Home</a></span>
+                <span><a href="https://github.com/Ry-Hebert" id="profile-link" target="_blank">GitHub</a></span>
             </div>
             <div class="nav-item">
-                <span><a class="nav-i" href="https://github.com/Ry-Hebert" id="profile-link" target="_blank">GitHub</a></span>
+                <span><a href="#projects">Projects</a></span>
             </div>
-            <div class="nav-item">
-                    <span><a class="nav-i" href="classProjects.html">Class Projects</a></span>
-                </div>
         </div>
     </div>
-    <div id="nav-spacing"></div>
-    <div id="landing-page">
-        <h1>Ryan Hébert</h1>
-        <h2>Photographer & Full Stack Web Developer</h2>
+    <div class="nav-spacer"></div>
+    <div class="landing-page">
+        <section id="welcome-section">   
+            <div>
+            <h1>Ryan Hébert</h1>
+            <p>Web Designer</p>
+            </div>
+        </section>
     </div>
-    <div>
-        
+    <div id="projects">
+        <div class="project-tile">
+            <p><a href="http://seamistcampground.com">My Latest Project</a></p>
+        </div>
     </div>
+    <div class="content-b cb-1">
+        <div class="cb-header">
+            <h1>Star Wars</h1>
+            <p>info</p>
+        </div>
+        <div class="jedi-archives">
+        <div class="ja-content">
+            <h2>Compile Search</h2>
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="dropbtn">Filter</button>
+                  <div id="myDropdown1" class="dropdown-content">
+                    <a href="#home" onclick="filterFunc(1, 'people')">People</a>
+                    <a href="#about" onclick="filterFunc(1, 'planets')">Planets</a>
+                    <a href="#contact" onclick="filterFunc(1, 'species')">Species</a>
+                    <a href="#contact" onclick="filterFunc(1, 'starships')">Starships</a>
+                    <a href="#contact" onclick="filterFunc(1, 'vehicles')">Vehicles</a>
+                  </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction2()" class="dropbtn">Filter Movie</button>
+                  <div id="myDropdown2" class="dropdown-content">
+                      <a href="#home" onclick="filterFunc(2, 1)">1</a>
+                      <a href="#about" onclick="filterFunc(2, 2)">2</a>
+                    <a href="#contact" onclick="filterFunc(2, 3)">3</a>
+                    <a href="#contact" onclick="filterFunc(2, 4)">4</a>
+                    <a href="#contact" onclick="filterFunc(2, 5)">5</a>
+                    <a href="#contact" onclick="filterFunc(2, 6)">6</a>
+                    <a href="#contact" onclick="filterFunc(2, 7)">7</a>
+                  </div>
+            </div>
+            <div>
+                <button onclick="returnResults()">Search</button>
+            </div>
+        </div>
+        <div class="ja-content">
+            <h2>Results:</h2>
+            <ul id="searchResults">
 
+            </ul>
+        </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="starships.js"></script>
 </body>
 </html>
