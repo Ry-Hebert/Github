@@ -108,8 +108,34 @@ display: flex;
 
 .card
 {
-    height: 20vh;
-    width: 20vh;
-    background-image: url('https://fortnite-public-files.theapinetwork.com/image/d17ae35-1b64bca-f0cebef-e097b12.png');
+    height: 25vh;
+    width: 25vh;
+    margin: 1em;
+    transition: 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.is-flipped
+{
+    transform: rotateY(180deg);
+}
+
+.front, .back
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
     background-size: cover;
+    position: absolute;
+}
+
+.back
+{
+transform: rotateY(180deg);
+display: block;
 }
