@@ -129,13 +129,13 @@ display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    backface-visibility: hidden;
     background-size: cover;
     position: absolute;
+    -webkit-backface-visibility: hidden;
 }
+
 
 .back
 {
 transform: rotateY(180deg);
-display: block;
 }
