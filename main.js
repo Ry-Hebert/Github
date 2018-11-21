@@ -45,7 +45,7 @@ if(hasRequested === 0)
                     {
                        'name': `${itemShort.name}`,
                        'cost': `${itemShort.cost}`,
-                       'rarity': `${itemShort.rarity}`
+                       'rarity': `${itemShort.item.rarity}`
                     }
 
                     results.innerHTML += 
@@ -55,7 +55,7 @@ if(hasRequested === 0)
                             <ul>
                                 <li>${itemInfo.name}</li>
                                 <li>Cost: ${itemInfo.cost}</li>
-                                <li>Rarity: ${itemInfo.item.rarity}</li>
+                                <li>Rarity: ${itemInfo.rarity}</li>
                             </ul>
                         </div>
                     </div>`;
