@@ -55,7 +55,7 @@ if(hasRequested === 0)
                             <ul>
                                 <li>${itemInfo.name}</li>
                                 <li>Cost: ${itemInfo.cost}</li>
-                                <li>Rarity: ${itemInfo.rarity}</li>
+                                <li>Rarity: ${itemInfo.item.rarity}</li>
                             </ul>
                         </div>
                     </div>`;
