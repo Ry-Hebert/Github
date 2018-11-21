@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
     <div id="navbar">
@@ -33,7 +33,25 @@
         </div>
         <div id="api-search-results">
         </div>
+        <div class="addNewItem">
+            <h2>Suggest a new Item</h2>
+            <form onsubmit="return false" id="fAddNewItem">
+                Item Name: 
+                <input type="text" name='Item Name' id="fItem_name">
+                <br>
+                Rarity: 
+                <select id="rarity" name="rarity">
+                    <option value="Common">Common</option>
+                    <option value="Uncommon">Uncommon</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Legendary">Legendary</option>
+                </select>
+                <br>
+                <button onclick="formSubmit()">Submit</button>
+            </form>
+        </div>
     </div>
-    <script src="main.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 </html>

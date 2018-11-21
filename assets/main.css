@@ -142,3 +142,8 @@ display: flex;
 {
 transform: rotateY(180deg);
 }
+
+.addNewItem
+{
+    padding: 5em;
+}

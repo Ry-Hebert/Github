@@ -3,6 +3,7 @@ let searchResults = null;
 let processedResults = null;
 let hasRequested = 0;
 const results = document.querySelector("#api-search-results");
+let customCount = 0;
 
 myFunction1 = () =>
 {
@@ -75,4 +76,23 @@ console.log(searchResults);
 cardFlip = (i) =>
 {
 document.querySelector(`#card${i}`).classList.toggle('is-flipped');
+}
+
+formSubmit = () =>
+{
+let formData = document.querySelector('#fAddNewItem');
+let name = document.querySelector('#fItem_name').value;
+let rarity = document.querySelector('#rarity').value;
+results.innerHTML += 
+                    `<div id='cardCustom${customCount}' class='card' onclick="cardFlip('Custom${customCount}')">
+                        <div class='front' style='background-image: url("assets/question_block.png");'></div>
+                        <div class='back' style='background-color: #000;'>
+                            <ul>
+                                <li>${name}</li>
+                                <li>Cost: ???</li>
+                                <li>Rarity: ${rarity}</li>
+                            </ul>
+                        </div>
+                    </div>`;
+customCount++;
 }
