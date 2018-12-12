@@ -1,27 +1,14 @@
-//https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get
 let searchResults = null;
 let processedResults = null;
 let hasRequested = 0;
 const results = document.querySelector("#api-search-results");
 let customCount = 0;
 
+//
 myFunction1 = () =>
 {
-if(hasRequested === 0)
+if(hasRequested === 0) //Used to see if the API has been queried already and reduce excessive calls. 
 {
-    /*
-    fetch(`https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get`)
-    .then(response =>
-        {
-            return response.json();
-        })
-        .then(response => 
-            {
-                
-            })
-        */
-        //processedResults = JSON.parse(searchResults.items);
-    
         fetch(`https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get`)
         .then(function(response)
         {
@@ -31,11 +18,11 @@ if(hasRequested === 0)
         {
             let tryThis = JSON.stringify(myJson);
             
-
             searchResults = myJson;
             
-            console.log(tryThis); //verify the correct object is being passing via console.
-            console.log(myJson.items.length);
+            //Trouble Shooting Tools
+            //console.log(tryThis); //verify the correct object is being passing via console.
+            //console.log(myJson.items.length);
 
             for(let i = 0; i < myJson.items.length; i++)
                 {   
@@ -48,7 +35,6 @@ if(hasRequested === 0)
                        'cost': `${itemShort.cost}`,
                        'rarity': `${itemShort.item.rarity}`
                     }
-
                     results.innerHTML += 
                     `<div id='card${i}' class='card' onclick="cardFlip(${i})">
                         <div class='front' style='background-image: url("${cImage}");'></div>
@@ -64,13 +50,11 @@ if(hasRequested === 0)
                     //results.appendChild(document.createElement('img')).textContent=myJson.items[i].name;
                 } 
         });
-
         hasRequested++;  
 }
-
-console.log(hasRequested);
-console.log(searchResults);
-
+//Trouble Shooting Tools
+//console.log(hasRequested);
+//console.log(searchResults);
 }
 
 cardFlip = (i) =>
