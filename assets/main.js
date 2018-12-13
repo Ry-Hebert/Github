@@ -1,12 +1,12 @@
 //  Global Variables
 const results = document.querySelector("#api-search-results"); //Shortens the Code needed to input new elements into the HTML
 let customCount = 0; //Stores the number of times a user has input a new item suggestion. 
+let hasRequested = 0; //Used to verify if the API has already been quired to reduce excessive calls.
 
 //  First Checks if the API has already been queried, If it hasn't then reference it and display information retrieved.
 myFunction1 = () =>
 {
 let searchResults = null;
-let hasRequested = 0;
 
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested === 0)
