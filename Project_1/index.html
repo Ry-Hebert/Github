@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="rh-css.css">
+</head>
+<body>
+    <!--
+        <div style="display:flex;justify-content:space-around;">
+            <img src="/assets/Untitled-1-w.svg">
+        </div>
+    -->
+    <div>
+    <img src="/assets/Untitled-1-w.svg" style="margin: 0px 25%">
+    </div>
+    <div>
+            <div class="p-info-block">
+                <img src="https://avatars3.githubusercontent.com/u/42846473?s=400&u=0f7e814550925761fe5076635539db8a185c04db&v=4" alt="profile pic">
+                <div class="info-col">
+                    <div class="info-row">
+                    <div>
+                        <h2 class="txt-high">Ryan Hébert</h2>    
+                    </div>
+                    <div>
+                        <h2 id="time-stamp"></h2>
+                    </div>
+                    </div>
+                
+                    <div class="info-list">
+                        <h3 class="txt-high">I began learning web development because:</h3>
+                        <ul class="info-list-content">
+                            <li>I enjoy the feeling of creating something.</li>
+                            <li>It gives me a creative outlet.</li>
+                            <li>Its nice to know you've made something of value.</li>
+                            <li>Its a very versatile and marketable skill.</li>
+                            <li>It can be fun.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="web-tech-info">
+                <figure class="tech-pic-script">
+                    <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="" class="tech-pic">
+                    <figcaption class="tech-script">I use node JS to serve dynamic webpages</figcaption>
+                </figure>
+                <figure class="tech-pic-script">
+                    <img src="https://cdn.worldvectorlogo.com/logos/html-5.svg" alt="" class="tech-pic">
+                    <figcaption class="tech-script">HTML is the backbone of web design</figcaption>
+                </figure><figure class="tech-pic-script">
+                    <img src="https://cdn.worldvectorlogo.com/logos/react.svg" alt="" class="tech-pic">
+                    <figcaption class="tech-script">React is great for designing UI</figcaption>
+                </figure><figure class="tech-pic-script">
+                    <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="" class="tech-pic">
+                    <figcaption class="tech-script">Bootstrap is a great frontend framework</figcaption>
+                </figure>
+            </div>
+            <div>
+                <h2 class="txt-high">I am looking forward to learning more about:</h2>
+                <div class="info-list">
+                <h3 class="txt-high">React</h3>
+                <p>Im interested in learning more about React because it seems to be a really useful tool for building client interfaces and web components. Ive also never worked closely with this type of framework and think that understanding it better would not only be beneficial for using react but other web frameworks and technologies.</p>
+                </div>
+            </div>
+            <div><p class="footer">This page is for educational purposes only.</p></div>
+    </div>
+</body>
+<script>
+    var d = new Date();
+    document.getElementById("time-stamp").innerHTML = d.toDateString();
+</script>
+</html>
+

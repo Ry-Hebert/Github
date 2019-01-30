@@ -1,0 +1,101 @@
+body
+{
+    /*
+    background-color: #000;
+    */
+    background-image: radial-gradient(closest-side, rgb(75, 75, 75),black);
+    color: aliceblue;
+    padding: 0% 5%;
+}
+
+.p-info-block
+{
+display:flex;
+flex-flow: row;
+}
+
+.info-col
+{
+display: flex;
+flex-flow: column;
+justify-content: space-between;
+flex: 1;
+padding: 0% 5%;
+}
+
+.info-row 
+{
+display: flex;
+flex-grow: 1;
+flex-flow: row;
+justify-content: space-between;
+}
+
+.info-list
+{
+display: flex;
+flex-flow: column;
+flex: end;
+background-color: rgb(25, 25, 25);
+padding: 10px
+}
+
+.info-list-content
+{
+margin: 0px;
+padding: 0px;
+list-style-position: inside;
+}
+
+.web-tech-info
+{
+padding: 5% 0PX;
+display: flex;
+flex-flow: row;
+align-items: baseline;
+}
+
+.tech-pic-script
+{
+display: flex;
+flex-flow: column;
+height: 100%;
+}
+
+.tech-pic
+{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tech-script
+{
+    text-align: center;
+    color: #000;
+    background-color: rgba(245, 245, 220, 0.8);
+}
+
+figure
+{
+display: table;
+}
+
+figcaption
+{
+display: table-caption;
+font-size: 1.1em;
+caption-side: bottom;
+position: relative;
+bottom: 2em;
+}
+
+.txt-high
+{
+color: rgb(0, 238, 255);
+}
+
+.footer
+{
+    text-align: center;
+}
