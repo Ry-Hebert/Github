@@ -19,6 +19,7 @@ body
     align-content: center;
     z-index: 100;
     font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #landing-page
@@ -30,6 +31,18 @@ body
     align-items: center;
     justify-content: center;
     font-size: 1em;
+}
+
+#landing-page-row
+{
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-items
@@ -146,4 +159,11 @@ transform: rotateY(180deg);
 .addNewItem
 {
     padding: 5em;
+}
+
+.projectItem
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
