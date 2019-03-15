@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div id="navbar">
+        <div class="nav-item-logo">
+            <span class="logo"><a class="nav-i" href="index.html">RH Designs</a></span>
+        </div>
+        <div class="nav-items">
+            <div class="nav-item">
+                <span><a class="nav-i" href="index.html">Home</a></span>
+            </div>
+            <div class="nav-item">
+                <span><a class="nav-i" href="https://github.com/Ry-Hebert" id="profile-link" target="_blank">GitHub</a></span>
+            </div>
+            <div class="nav-item">
+                    <span><a class="nav-i" href="projects.html">Class Projects</a></span>
+                </div>
+        </div>
+    </div>
+    <div id="nav-spacing"></div>
+    <div id="landing-page-row-top">
+                <div id='full-section-headder'>
+                    <h1>Star Wars</h1>
+                    <h2>API Search</h2>
+                </div>
+            <div id='landing-page-row-top-flex'>
+                <div class="ja-content">
+                    <div>
+                        <h2>Compile Search</h2>
+                    </div>
+                    <div class='align-content-center'>
+                        <div class="dropdown">
+                            <button onclick="myFunction1()" class="dropbtn">Filter</button>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <a href="#home" onclick="filterFunc(1, 'characters')">People</a>
+                                <a href="#about" onclick="filterFunc(1, 'planets')">Planets</a>
+                                <a href="#contact" onclick="filterFunc(1, 'species')">Species</a>
+                                <a href="#contact" onclick="filterFunc(1, 'starships')">Starships</a>
+                                <a href="#contact" onclick="filterFunc(1, 'vehicles')">Vehicles</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button onclick="myFunction2()" class="dropbtn">Filter Movie</button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a href="#home" onclick="filterFunc(2, 1)">1</a>
+                                <a href="#about" onclick="filterFunc(2, 2)">2</a>
+                                <a href="#contact" onclick="filterFunc(2, 3)">3</a>
+                                <a href="#contact" onclick="filterFunc(2, 4)">4</a>
+                                <a href="#contact" onclick="filterFunc(2, 5)">5</a>
+                                <a href="#contact" onclick="filterFunc(2, 6)">6</a>
+                                <a href="#contact" onclick="filterFunc(2, 7)">7</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                            <button onclick="returnResults()">Search</button>
+                    </div>
+                </div>
+                <div class="ja-content">
+                    <div>
+                        <h2>Results:</h2>
+                    </div>
+                    <div id="results-section">
+                        <ul id="searchResults"></ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="assets/sws.js"></script>
+    <script src="assets/starships.js"></script>
+</body>
+</html>

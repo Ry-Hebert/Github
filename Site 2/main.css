@@ -106,6 +106,7 @@ display: inline;
 {
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
 }
 
 .dropbtn {
@@ -146,3 +147,8 @@ display: inline;
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+#results-section
+{
+    max-width: 100%;
+}
