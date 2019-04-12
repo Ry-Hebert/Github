@@ -11,7 +11,7 @@ let searchResults = null;
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested === 0)
     {
-            fetch(`https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get`)
+            fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/list`)
             .then(function(response)
             {
             return response.json();
@@ -21,16 +21,19 @@ let searchResults = null;
                 searchResults = myJson;
 
                 // Loop through the length of the returned list and create DOM elements
-                for(let i = 0; i < myJson.items.length; i++)
+                for(let i = 0; i < myJson.length; i++)
                     {   
-                        let cImage = myJson.items[i].item.images.background;
-                        let itemShort = myJson.items[i];
+                        //let cImage = myJson.items[i].item.images.background;
+                        //let itemShort = myJson.items[i];
+
+                        let itemShort = myJson[i];
+                        let cImage = myJson[i].images.background;
 
                         let itemInfo = 
                         {
                         'name': `${itemShort.name}`,
                         'cost': `${itemShort.cost}`,
-                        'rarity': `${itemShort.item.rarity}`
+                        'rarity': `${itemShort.rarity}`
                         }
 
                         //Create Cards Display
