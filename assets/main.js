@@ -19,7 +19,7 @@ let searchResults = null;
             .then(function(myJson)
             {
                 searchResults = myJson;
-
+                //
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.length; i++)
                     {   
