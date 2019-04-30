@@ -4,6 +4,7 @@ let customCount = 0; //Stores the number of times a user has input a new item su
 let hasRequested = 0; //Used to verify if the API has already been quired to reduce excessive calls.
 let hasRequested1 = 0; //Used to verify if the API has already been quired to reduce excessive calls.
 let hasRequested2 = 0; //Used to verify if the API has already been quired to reduce excessive calls.
+let bigQuerry = null;
 
 //  First Checks if the API has already been queried, If it hasn't then reference it and display information retrieved.
 myFunction1 = () =>
@@ -22,13 +23,11 @@ RmPrevious();
             .then(function(myJson)
             {
                 searchResults = myJson;
-                //
+                bigQuerry=myJson;                
+
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.length; i++)
                     {   
-                        //let cImage = myJson.items[i].item.images.background;
-                        //let itemShort = myJson.items[i];
-
                         let itemShort = myJson[i];
                         let cImage = myJson[i].images.background;
 
@@ -57,6 +56,36 @@ RmPrevious();
             });
             hasRequested++; //Tell the Function that the API has been queried. 
     }
+    else
+    {
+        for(let i = 0; i < bigQuerry.length; i++)
+        {   
+            let itemShort = myJson[i];
+            let cImage = myJson[i].images.background;
+
+            let itemInfo = 
+            {
+            'name': `${itemShort.name}`,
+            'cost': `${itemShort.cost}`,
+            'rarity': `${itemShort.rarity}`
+            }
+
+            //Create Cards Display
+            results.innerHTML += 
+            `<div id='card${i}' class='card' onclick="cardFlip(${i})">
+                <div class='front' style='background-image: url("${cImage}");'></div>
+                <div class='back' style='background-color: #000;'>
+                    <ul>
+                        <li>${itemInfo.name}</li>
+                        <li>Cost: ${itemInfo.cost}</li>
+                        <li>Rarity: ${itemInfo.rarity}</li>
+                    </ul>
+                </div>
+            </div>`;
+            
+            //results.appendChild(document.createElement('div')).textContent=myJson.items[i].name;
+        } 
+    }
 }
 
 myFunction2 = () =>
@@ -79,9 +108,6 @@ RmPrevious();
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.items.length; i++)
                     {   
-                        //let cImage = myJson.items[i].item.images.background;
-                        //let itemShort = myJson.items[i];
-
                         let itemShort = myJson.items[i];
                         let cImage = myJson.items[i].item.images.background;
 
@@ -132,9 +158,6 @@ RmPrevious();
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.data[3].entries.length; i++)
                     {   
-                        //let cImage = myJson.items[i].item.images.background;
-                        //let itemShort = myJson.items[i];
-
                         let itemShort = myJson.data[3].entries[i];
                         let cImage = myJson.data[3].entries[i].images.background;
 
@@ -183,9 +206,6 @@ RmPrevious();
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.data[2].entries.length; i++)
                     {   
-                        //let cImage = myJson.items[i].item.images.background;
-                        //let itemShort = myJson.items[i];
-
                         let itemShort = myJson.data[2].entries[i];
                         let cImage = myJson.data[2].entries[i].images.background;
 
@@ -232,9 +252,6 @@ RmPrevious();
                 // Loop through the length of the returned list and create DOM elements
                 for(let i = 0; i < myJson.data[1].entries.length; i++)
                     {   
-                        //let cImage = myJson.items[i].item.images.background;
-                        //let itemShort = myJson.items[i];
-
                         let itemShort = myJson.data[1].entries[i];
                         let cImage = myJson.data[1].entries[i].images.background;
 
