@@ -9,6 +9,7 @@ let hasRequested2 = 0; //Used to verify if the API has already been quired to re
 myFunction1 = () =>
 {
 let searchResults = null;
+RmPrevious();
 
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested === 0)
@@ -61,6 +62,7 @@ let searchResults = null;
 myFunction2 = () =>
 {
 let searchResults = null;
+RmPrevious();
 
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested1 === 0)
@@ -113,6 +115,7 @@ let searchResults = null;
 myFunction3 = () =>
 {
 let searchResults = null;
+RmPrevious();
 
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested2 === 0)
@@ -165,6 +168,7 @@ let searchResults = null;
 myFunction4 = () =>
 {
 let searchResults = null;
+RmPrevious();
 
     //Used to see if the API has been queried already and reduce excessive calls.
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/popular`)
@@ -213,6 +217,7 @@ let searchResults = null;
 myFunction5 = () =>
 {
 let searchResults = null;
+RmPrevious();
 
     //Used to see if the API has been queried already and reduce excessive calls.
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/popular`)
@@ -262,6 +267,14 @@ let searchResults = null;
 cardFlip = (i) =>
 {
 document.querySelector(`#card${i}`).classList.toggle('is-flipped');
+}
+
+RmPrevious = () =>
+{
+    while (results.firstChild)
+    {
+        results.removeChild(results.firstChild);
+    }
 }
 
 //  User Input Card Generator.
