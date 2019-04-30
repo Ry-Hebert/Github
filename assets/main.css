@@ -334,3 +334,34 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }
+
+.ry-dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.ry-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ry-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 500;
+}
+
+.ry-dropdown-content button {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ry-dropdown-content button {width: 100%;}
+
+.ry-dropdown:hover .ry-dropdown-content {display: block;}
+
+.ry-dropdown:hover .ry-dropbtn {background-color: #0053ba;}

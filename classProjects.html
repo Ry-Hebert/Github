@@ -31,6 +31,16 @@
         <h3>(This may take a while... But it is more than 25 items.)</h3>
         <div class="flex-row-obj">
             <div><button class="button-obj" onclick="myFunction1()">Search</button></div>
+            <div class="ry-dropdown">
+                <button class="ry-dropbtn button-obj">Search</button>
+                <div class="ry-dropdown-content">
+                  <button onclick="myFunction1()">All Items</button>
+                  <button onclick="myFunction2()">Upcoming Items</button>
+                  <button onclick="myFunction3()">Popular Items: All Time</button>
+                  <button onclick="myFunction4()">Popular Items: Week</button>
+                  <button onclick="myFunction5()">Popular Items: Day</button>
+                </div>
+              </div>
         </div>
         <div id="api-search-results">
         </div>
