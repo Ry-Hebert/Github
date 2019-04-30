@@ -92,10 +92,6 @@ myFunction2 = () =>
 {
 let searchResults = null;
 RmPrevious();
-
-    //Used to see if the API has been queried already and reduce excessive calls.
-    if(hasRequested1 === 0)
-    {
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get`)
             .then(function(response)
             {
@@ -134,18 +130,12 @@ RmPrevious();
                         //results.appendChild(document.createElement('div')).textContent=myJson.items[i].name;
                     } 
             });
-            hasRequested1++; //Tell the Function that the API has been queried. 
-    }
 }
 
 myFunction3 = () =>
 {
 let searchResults = null;
 RmPrevious();
-
-    //Used to see if the API has been queried already and reduce excessive calls.
-    if(hasRequested2 === 0)
-    {
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/popular`)
             .then(function(response)
             {
@@ -184,16 +174,12 @@ RmPrevious();
                         //results.appendChild(document.createElement('div')).textContent=myJson.items[i].name;
                     } 
             });
-            hasRequested2++; //Tell the Function that the API has been queried. 
-    }
 }
 
 myFunction4 = () =>
 {
 let searchResults = null;
 RmPrevious();
-
-    //Used to see if the API has been queried already and reduce excessive calls.
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/popular`)
             .then(function(response)
             {
@@ -238,8 +224,6 @@ myFunction5 = () =>
 {
 let searchResults = null;
 RmPrevious();
-
-    //Used to see if the API has been queried already and reduce excessive calls.
             fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/popular`)
             .then(function(response)
             {
