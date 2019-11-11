@@ -15,7 +15,7 @@ RmPrevious();
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested === 0)
     {
-            fetch(`https://fortnite-public-api.theapinetwork.com/prod09/items/list`, {credentials: `4145e6b7-eee9-4d0b-a47f-2bd4a28822d9`})
+            fetch(`https://api.fortnitetracker.com/v1/store`, {credentials: `4145e6b7-eee9-4d0b-a47f-2bd4a28822d9`})
             .then(function(response)
             {
             return response.json();
