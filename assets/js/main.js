@@ -15,7 +15,7 @@ RmPrevious();
     //Used to see if the API has been queried already and reduce excessive calls.
     if(hasRequested === 0)
     {
-            fetch(`https://api.fortnitetracker.com/v1/store`, {credentials: `4145e6b7-eee9-4d0b-a47f-2bd4a28822d9`})
+            fetch(`https://api.fleetyards.net/v1/models`)
             .then(function(response)
             {
             return response.json();
@@ -29,13 +29,15 @@ RmPrevious();
                 for(let i = 0; i < myJson.length; i++)
                     {   
                         let itemShort = myJson[i];
-                        let cImage = myJson[i].images.background;
+                        let cImage = myJson[i].storeImage;
 
                         let itemInfo = 
                         {
                         'name': `${itemShort.name}`,
-                        'cost': `${itemShort.cost}`,
-                        'rarity': `${itemShort.rarity}`
+                        'max-crew': `${itemShort.maxCrew}`,
+                        'store-url': `${itemShort.storeUrl}`,
+                        'description': `${itemShort.description}`,
+                        'price': `${itemShort.price}`
                         }
 
                         //Create Cards Display
