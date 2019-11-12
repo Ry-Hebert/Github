@@ -47,8 +47,8 @@ RmPrevious();
                             <div class='back' style='background-color: #000;'>
                                 <ul>
                                     <li>${itemInfo.name}</li>
-                                    <li>Cost: ${itemInfo.cost}</li>
-                                    <li>Rarity: ${itemInfo.rarity}</li>
+                                    <li>Max Crew: ${itemInfo.max-crew}</li>
+                                    <li>Price: ${itemInfo.price}</li>
                                 </ul>
                             </div>
                         </div>`;
@@ -63,13 +63,15 @@ RmPrevious();
         for(let i = 0; i < bigQuerry.length; i++)
         {   
             let itemShort = myJson[i];
-            let cImage = myJson[i].images.background;
+            let cImage = myJson[i].storeImage;
 
             let itemInfo = 
             {
             'name': `${itemShort.name}`,
-            'cost': `${itemShort.cost}`,
-            'rarity': `${itemShort.rarity}`
+            'max-crew': `${itemShort.maxCrew}`,
+            'store-url': `${itemShort.storeUrl}`,
+            'description': `${itemShort.description}`,
+            'price': `${itemShort.price}`
             }
 
             //Create Cards Display
@@ -79,8 +81,8 @@ RmPrevious();
                 <div class='back' style='background-color: #000;'>
                     <ul>
                         <li>${itemInfo.name}</li>
-                        <li>Cost: ${itemInfo.cost}</li>
-                        <li>Rarity: ${itemInfo.rarity}</li>
+                        <li>Max Crew: ${itemInfo.max-crew}</li>
+                        <li>Price: ${itemInfo.price}</li>
                     </ul>
                 </div>
             </div>`;
