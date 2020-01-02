@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <div id="navbar">
-        <div class="nav-item-logo">
-            <span class="logo"><a class="nav-i" href="index.html">RH Designs</a></span>
-        </div>
-        <div class="nav-items">
-            <div class="nav-item">
-                <span><a class="nav-i" href="index.html">Home</a></span>
+    <head>
+        <meta charset="UTF-8" >
+        <!--Do Not Lie-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Fill Me In">
+        <meta name="author" content="Ryan Hébert">
+        <title>RH: RSI API Search</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/scss/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">Ryan Hébert Web Developer</a>
             </div>
-            <div class="nav-item">
-                <span><a class="nav-i" href="https://github.com/Ry-Hebert" id="profile-link" target="_blank">GitHub</a></span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="https://github.com/Ry-Hebert"></a>GitHub</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="nav-spacing"></div>
+            <div id="landing-page-2">
+                <h1>Roberts Space Industries API:</h1>
+                <h2>Vehicle Search</h2>
+                <p>This page will display a list of the vehicles in Roberts Space Industries game, Star Citizen.</p>
             </div>
-            <div class="nav-item">
-                    <span><a class="nav-i" href="projects.html">Class Projects</a></span>
+            <div class="content-section fort-search">
+                <h2>Click 'Search' to retrive a list of items from Vehicles from Star Citizen.</h2>
+                <div class="flex-row-obj">
+                    <div class="ry-dropdown">
+                        <button class="ry-dropbtn button-obj">Search</button>
+                        <div class="ry-dropdown-content">
+                        <button onclick="myFunction1()">All Models</button>
+                        <button onclick="myFunction2()">Models With Brochures</button>
+                        <button onclick="myFunction3()">Popular Items: All Time</button>
+                        <button onclick="myFunction4()">Popular Items: Week</button>
+                        <button onclick="myFunction5()">Popular Items: Day</button>
+                        </div>
+                    </div>
                 </div>
-        </div>
-    </div>
-    <div id="nav-spacing"></div>
-    <div id="landing-page-2">
-        <h1>Roberts Space Industries API:</h1>
-        <h2>Vehicle Search</h2>
-        <p>This page will display a list of the vehicles in Roberts Space Industries game, Star Citizen.</p>
-    </div>
-    <div class="content-section fort-search">
-        <h2>Click 'Search' to retrive a list of items from Vehicles from Star Citizen.</h2>
-        <div class="flex-row-obj">
-            <div class="ry-dropdown">
-                <button class="ry-dropbtn button-obj">Search</button>
-                <div class="ry-dropdown-content">
-                  <button onclick="myFunction1()">All Models</button>
-                  <button onclick="myFunction2()">Models With Brochures</button>
-                  <button onclick="myFunction3()">Popular Items: All Time</button>
-                  <button onclick="myFunction4()">Popular Items: Week</button>
-                  <button onclick="myFunction5()">Popular Items: Day</button>
+                <div id="api-search-results">
                 </div>
-              </div>
-        </div>
-        <div id="api-search-results">
-        </div>
-        <div class="addNewItem">
-            <h2>Suggest a new Item</h2>
-            <form onsubmit="return false" id="AddNewItem">
-                Item Name: 
-                <input type="text" name='Item Name' id="fItem_name">
-                <br>
-                Rarity: 
-                <select id="rarity" name="rarity">
-                    <option value="Common">Common</option>
-                    <option value="Uncommon">Uncommon</option>
-                    <option value="Rare">Rare</option>
-                    <option value="Epic">Epic</option>
-                    <option value="Legendary">Legendary</option>
-                </select>
-                <br>
-                <button class="button-obj" onclick="formSubmit()">Submit</button>
-            </form>
-        </div>
-    </div>
-    <script src="assets/js/main.js"></script>
-</body>
+                <div class="addNewItem">
+                    <h2>Suggest a new Item</h2>
+                    <form onsubmit="return false" id="AddNewItem">
+                        Item Name: 
+                        <input type="text" name='Item Name' id="fItem_name">
+                        <br>
+                        Rarity: 
+                        <select id="rarity" name="rarity">
+                            <option value="Common">Common</option>
+                            <option value="Uncommon">Uncommon</option>
+                            <option value="Rare">Rare</option>
+                            <option value="Epic">Epic</option>
+                            <option value="Legendary">Legendary</option>
+                        </select>
+                        <br>
+                        <button class="button-obj" onclick="formSubmit()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

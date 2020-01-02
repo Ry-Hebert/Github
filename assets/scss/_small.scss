@@ -28,6 +28,21 @@ $color1: #252525;
     max-width: $max-width;
 }
 
+%grid
+{
+    display: grid;
+}
+
+%g-jic
+{
+    justify-items: center;
+}
+
+%g-aic
+{
+    align-items: center;
+}
+
 body
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -43,10 +58,6 @@ header
     .logo
     {
         height: 100%;
-    }
-    nav ul li
-    {
-
     }
 }
 
