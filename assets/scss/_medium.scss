@@ -6,3 +6,31 @@
         padding: $spacing 0rem;
     }
 }
+
+#ham-menu
+{
+    display: none;
+}
+
+.med-lg
+{
+    display: inline;
+}
+
+#certGrid
+{
+    align-items: flex-end;
+    h3
+    {
+        grid-column: span 3;
+    }
+    .cert
+    {
+        grid-column: span 1;
+        img
+        {
+            max-height: 15vh;
+            grid-column: span 3;
+        }
+    }    
+}

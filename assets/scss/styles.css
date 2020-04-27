@@ -271,6 +271,7 @@ nav ul li:hover {
 
 .homeSec1 h2 {
   margin: 1rem 0rem;
+  grid-column: span 3;
 }
 
 .homeSec1 p {
@@ -440,7 +441,6 @@ footer * {
       justify-self: center;
   text-decoration: none;
   color: #252525;
-  padding: 2px 0rem;
 }
 
 .topItem {
@@ -522,6 +522,27 @@ footer * {
   }
   .projectsIntroduction * {
     padding: 1rem 0rem;
+  }
+  #ham-menu {
+    display: none;
+  }
+  .med-lg {
+    display: inline;
+  }
+  #certGrid {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #certGrid h3 {
+    grid-column: span 3;
+  }
+  #certGrid .cert {
+    grid-column: span 1;
+  }
+  #certGrid .cert img {
+    max-height: 15vh;
+    grid-column: span 3;
   }
 }
 /*# sourceMappingURL=styles.css.map */

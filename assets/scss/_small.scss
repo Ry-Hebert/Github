@@ -202,6 +202,7 @@ nav
     h2
     {
         margin: $spacing 0rem;
+        grid-column: span 3;
     }
     p
     {
@@ -370,7 +371,6 @@ footer
         justify-self: center;
         text-decoration: none;
         color: #252525;
-        padding: 2px 0rem;
     }
 }
 
