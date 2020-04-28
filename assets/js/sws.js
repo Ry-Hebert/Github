@@ -53,7 +53,7 @@ returnResults = () =>
     results.removeChild(results.firstChild);
   }
 
-  fetch(`https://swapi.co/api/films/${search2}/`)
+  fetch(`https://swapi.py4e.com/api/films/${search2}/`)
       .then(function(response)
       {
         return response.json();

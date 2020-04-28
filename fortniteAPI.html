@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <!--Do Not Lie-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Fill Me In">
+        <meta name="author" content="Ryan Hébert">
+        <title>Ryan Hébert Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/scss/styles.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">Ryan Hébert Web Developer</a>
+            </div>
+            <div id="ham-menu">&#9776;</div>
+            <div id="ham-menu-close" class="menuToggle">&#x2715;</div>
+            <nav class="med-lg">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                    <li><a href="https://github.com/Ry-Hebert">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="sm-menu-opt" class="menuToggle">
+            <nav class="sm-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                    <li><a href="https://github.com/Ry-Hebert">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="nav-spacing"></div>
+    <div id="landing-page-2">
+        <h1>Fortnite API:</h1>
+        <h2>Items Search</h2>
+        <p>This page will display a list of the Fortnite items</p>
+    </div>
+    <div class="content-section fort-search">
+        <h2>Click 'Search' to retrive a list of items from Fortnite</h2>
+        <h3>(This may take a while... But it is more than 25 items.)</h3>
+        <div class="flex-row-obj">
+            <div class="ry-dropdown">
+                <button class="ry-dropbtn button-obj">Search</button>
+                <div class="ry-dropdown-content">
+                  <button onclick="myFunction1()">All Items</button>
+                  <button onclick="myFunction2()">Upcoming Items</button>
+                  <button onclick="myFunction3()">Popular Items: All Time</button>
+                  <button onclick="myFunction4()">Popular Items: Week</button>
+                  <button onclick="myFunction5()">Popular Items: Day</button>
+                </div>
+              </div>
+        </div>
+        <div id="api-search-results">
+        </div>
+        <div class="addNewItem">
+            <h2>Suggest a new Item</h2>
+            <form onsubmit="return false" id="AddNewItem">
+                Item Name: 
+                <input type="text" name='Item Name' id="fItem_name">
+                <br>
+                Rarity: 
+                <select id="rarity" name="rarity">
+                    <option value="Common">Common</option>
+                    <option value="Uncommon">Uncommon</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Legendary">Legendary</option>
+                </select>
+                <br>
+                <button class="button-obj" onclick="formSubmit()">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/fortnite.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

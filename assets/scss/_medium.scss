@@ -29,8 +29,35 @@
         grid-column: span 1;
         img
         {
-            max-height: 15vh;
+            max-height: 10vh;
             grid-column: span 3;
         }
     }    
+}
+
+.landing-page-row
+{
+    padding: $spacing*2 $spacing;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.topItem
+{
+    grid-column: 3 / span 2 !important;
+}
+
+#item3
+{
+    grid-column: 1 / span 2;
+}
+
+#item7
+{
+    grid-column: 1 / span 2;
+}
+
+#projectSec
+{
+    padding: $spacing 10vw;
 }

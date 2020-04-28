@@ -449,6 +449,14 @@ footer * {
   grid-column: 2 / span 2;
 }
 
+#item2 {
+  grid-column: span 2;
+}
+
+#item6 {
+  grid-column: span 2;
+}
+
 .projectsIntroduction {
   display: -ms-grid;
   display: grid;
@@ -462,6 +470,7 @@ footer * {
   justify-items: center;
   padding: 8rem 1rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .projectsIntroduction * {
@@ -514,6 +523,8 @@ footer * {
   background-color: #c9d6df;
   color: #252525;
   padding: 0rem 0rem 4rem;
+  position: relative;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 34rem) {
@@ -541,8 +552,47 @@ footer * {
     grid-column: span 1;
   }
   #certGrid .cert img {
-    max-height: 15vh;
+    max-height: 10vh;
     grid-column: span 3;
+  }
+  .landing-page-row {
+    padding: 2rem 1rem;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .topItem {
+    -ms-grid-column: 3 !important;
+    -ms-grid-column-span: 2 !important;
+    grid-column: 3 / span 2 !important;
+  }
+  #item3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  #item7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  #projectSec {
+    padding: 1rem 10vw;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  #hS2G {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+  .landing-page-row {
+    padding: 4rem 1rem;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 4rem 8rem;
+  }
+  #projectSec {
+    padding: 1rem 15vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */

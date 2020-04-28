@@ -379,6 +379,16 @@ footer
     grid-column: 2 / span 2;
 }
 
+#item2
+{
+    grid-column: span 2;
+}
+
+#item6
+{
+    grid-column: span 2;
+}
+
 .projectsIntroduction
 {
     display: grid;
@@ -388,6 +398,7 @@ footer
     justify-items: center;
     padding: $spacing*8 $spacing;
     text-align: center;
+    font-size: 1.5rem;
     *
     {
         padding: $spacing 0rem;
@@ -435,4 +446,6 @@ footer
     background-color: #c9d6df;
     color: #252525;
     padding: 0rem 0rem $spacing*4;
+    position: relative;
+    z-index: 5;
 }

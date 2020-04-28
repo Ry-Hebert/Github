@@ -1,0 +1,18 @@
+#hS2G
+{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.landing-page-row
+{
+    padding: $spacing*4 $spacing;
+    grid: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: $spacing*4 $spacing*8;
+}
+
+#projectSec
+{
+    padding: $spacing 15vw;
+}
