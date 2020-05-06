@@ -393,19 +393,32 @@ nav ul li:hover {
 }
 
 footer {
+  background-color: #101010;
+  padding: 2rem 1rem 0.5rem;
   display: -ms-grid;
   display: grid;
-  padding: 2rem 1rem 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #101010;
+  text-align: center;
 }
 
-footer * {
+footer .fContact {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .fContact * {
   -ms-grid-column-align: center;
       justify-self: center;
   padding: 1rem;
+}
+
+footer div #copyright {
+  font-size: .8rem;
 }
 
 .landing-page-row {
@@ -582,8 +595,8 @@ footer * {
 
 @media only screen and (min-width: 70rem) {
   #hS2G {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 25vw;
+    padding-right: 25vw;
   }
   .landing-page-row {
     padding: 4rem 1rem;

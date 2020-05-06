@@ -333,14 +333,27 @@ nav
 
 footer
 {
-    display: grid;
-    padding: $spacing*2 $spacing $spacing*2;
-    justify-content: center;
     background-color: #101010;
-    *
+    padding: $spacing*2 $spacing $spacing*.5;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    .fContact
     {
-        justify-self: center;
-        padding: $spacing;
+        display: grid;
+        justify-content: center;
+        *
+        {
+            justify-self: center;
+            padding: $spacing;
+        }
+    }
+    div
+    {
+        #copyright
+        {
+            font-size: .8rem;
+        }
     }
 }
 

@@ -2,6 +2,9 @@ let menuTog1 = document.querySelector('#ham-menu')
 let menuTog2 = document.querySelector('#ham-menu-close')
 let navTog = document.querySelector('#sm-menu-opt')
 
+let pos3 = document.querySelector('#copyright')
+pos3.textContent=`Copyright © ${new Date().getFullYear()} Ryan Hébert`
+
 menuToggle = (x) =>
 {
     if(x == 0)
