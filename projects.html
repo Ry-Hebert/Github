@@ -49,7 +49,7 @@
             <div class="landing-page-row">
                 <div class='projectItem topItem' id='item1'>
                     <a class='nav-i fix-my-content' href='http://www.seamistcampground.com' target="_blank">
-                    <img class='image-format' src="assets/images/Screen Shot 2019-04-30 at 9.38.37 AM.png" alt="image of SeaMist Campground site">
+                    <img class='image-format lazy' loading="lazy" data-src="assets/images/Screen Shot 2019-04-30 at 9.38.37 AM.jpg" alt="image of SeaMist Campground site">
                     <h3>SeaMist Campground</h3>
                     </a>
                 </div>
@@ -60,25 +60,25 @@
             <div class="landing-page-row">
                 <div class='projectItem topItem' id='item2'>
                     <a class='nav-i fix-my-content' href='StarWarsAPISearch.html'>
-                    <img class='image-format' src="assets/images/Screen Shot 2019-03-14 at 10.06.19 PM.png" alt="image of StarWars API project">
+                    <img class='image-format lazy' loading="lazy" data-src="assets/images/Screen Shot 2019-03-14 at 10.06.19 PM.jpg" alt="image of StarWars API project">
                     <h3>StarWars API</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item3'>
                     <a class='nav-i fix-my-content' href='https://zealous-yalow-7e3165.netlify.app/dgm-2740-15/'>
-                    <img class='image-format' src="assets/images/Screen Shot 2020-04-27 at 3.25.27 PM.png" alt="Fortnite API project">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2020-04-27 at 3.25.27 PM.jpg" alt="Fortnite API project">
                     <h3>Blue River Mock Site</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item4'>
                     <a class='nav-i fix-my-content' href='https://zealous-perlman-15f6ff.netlify.app'>
-                    <img class='image-format' src="assets/images/Screen Shot 2020-04-27 at 1.57.37 PM.png" alt="browser inspector project">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2020-04-27 at 1.57.37 PM.jpg" alt="browser inspector project">
                     <h3>Browser Inspector</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item5'>
                     <a class='nav-i fix-my-content' href='fortniteAPI.html'>
-                    <img class='image-format' src="assets/images/Screen Shot 2019-03-14 at 11.35.53 AM.png" alt="Fortnite API project">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2019-03-14 at 11.35.53 AM.jpg" alt="Fortnite API project">
                     <h3>Fortnite API</h3>
                     </a>
                 </div>
@@ -89,25 +89,25 @@
             <div class="landing-page-row">
                 <div class='projectItem topItem' id='item6'>
                     <a class='nav-i fix-my-content' href='https://xd.adobe.com/view/f4c3068b-6409-4e41-6ed6-bebdee4b8dbd-82f2/?fullscreen' target="_blank">
-                    <img class='image-format' src="assets/images/Screen Shot 2020-04-27 at 4.04.33 PM.png" alt="Utah Animal Shelter site design concept">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2020-04-27 at 4.04.33 PM.jpg" alt="Utah Animal Shelter site design concept">
                     <h3>Utah Animal Shelter</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item7'>
                     <a class='nav-i fix-my-content' href='assets/files/PackageTheft.pdf' target="_blank">
-                    <img class='image-format' src="assets/images/Screen Shot 2019-04-29 at 1.22.08 AM.png" alt="Package Theft Case Study doc">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2019-04-29 at 1.22.08 AM.jpg" alt="Package Theft Case Study doc">
                     <h3>Package Theft Case Study</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item8'>
                     <a class='nav-i fix-my-content' href='assets/files/AGT Deliverable Draft 3.pdf' target="_blank">
-                    <img class='image-format' src="assets/images/Screen Shot 2019-04-16 at 9.47.15 PM.png" alt="AGT deliverable doc">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2019-04-16 at 9.47.15 PM.jpg" alt="AGT deliverable doc">
                     <h3>AGT Deliverable</h3>
                     </a>
                 </div>
                 <div class='projectItem' id='item9'>
                     <a class='nav-i fix-my-content' href='https://xd.adobe.com/view/5ad68d70-6266-430a-65d4-6d1a8d5aa5f5-2ce7/' target="_blank">
-                    <img class='image-format' src="assets/images/Screen Shot 2020-04-27 at 4.17.14 PM.png" alt="Architecture and Engineering Department site redesign draft">
+                    <img class='image-format lazy' loading='lazy' data-src="assets/images/Screen Shot 2020-04-27 at 4.17.14 PM.jpg" alt="Architecture and Engineering Department site redesign draft">
                     <h3>AED Site Redesign: Group Project</h3>
                     </a>
                 </div>
@@ -116,12 +116,14 @@
         <footer>
             <div class="fContact">
                 <h2>Contact Me</h2>
-                <div id="cEmail"><img id="emailFig" alt="email figure image" src="/assets/images/white-email-icon-transparent-background-1.png"><h4>ryan@thecpafirm.com</h4></div>
+                <div id="cEmail"><img class="lazy" loading='lazy' id="emailFig" alt="email figure image" data-src="/assets/images/white-email-icon-transparent-background-1.png"><h4>ryan@thecpafirm.com</h4></div>
             </div>
             <div>
                 <p id="copyright"></p>
             </div>
         </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
+    <script>let lazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});</script>
     <script src="/assets/js/main.js"></script>
 </html>
